@@ -11,6 +11,18 @@ Summary: Apply JSON-Patches (RFC 6902)
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jsonpatch-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jsonpatch-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/jsonpatch-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jsonpatch-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jsonpatch-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jsonpatch-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jsonpatch/badges/version.svg)](https://anaconda.org/conda-forge/jsonpatch)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jsonpatch/badges/downloads.svg)](https://anaconda.org/conda-forge/jsonpatch)
+
 Installing jsonpatch
 ====================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `jsonpatch` available on your plat
 ```
 conda search jsonpatch --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jsonpatch-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jsonpatch-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/jsonpatch-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jsonpatch-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jsonpatch-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jsonpatch-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jsonpatch/badges/version.svg)](https://anaconda.org/conda-forge/jsonpatch)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jsonpatch/badges/downloads.svg)](https://anaconda.org/conda-forge/jsonpatch)
 
 
 Updating jsonpatch-feedstock
