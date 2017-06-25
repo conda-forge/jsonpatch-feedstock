@@ -1,21 +1,21 @@
-{%set name = "jsonpatch" %}
-{%set version = "1.16" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "f025c28a08ce747429ee746bb21796c3b6417ec82288f8fe6514db7398f2af8a" %}
-{%set build_num = "0" %}
+{% set name = "jsonpatch" %}
+{% set version = "1.16" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "f025c28a08ce747429ee746bb21796c3b6417ec82288f8fe6514db7398f2af8a" %}
+{% set build = 0%}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build_num }}
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
