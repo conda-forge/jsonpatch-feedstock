@@ -1,8 +1,8 @@
 {%set name = "jsonpatch" %}
-{%set version = "1.15" %}
+{%set version = "1.16" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "ae23cd08b2f7246f8f2475363501e740c4ef93f08f2a3b7b9bcfac0cc37fceb1" %}
+{%set hash_val = "f025c28a08ce747429ee746bb21796c3b6417ec82288f8fe6514db7398f2af8a" %}
 {%set build_num = "0" %}
 
 package:
