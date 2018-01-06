@@ -3,7 +3,7 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash_val = "11f5ffdf543a83047a2f54ac28f8caad7f34724cb1ea26b27547fd974f1a2153" %}
-{% set build = 0%}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
@@ -17,6 +17,7 @@ source:
 build:
   number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
 
 requirements:
   build:
