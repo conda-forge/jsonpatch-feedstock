@@ -1,8 +1,8 @@
 {% set name = "jsonpatch" %}
-{% set version = "1.21" %}
+{% set version = "1.22" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "11f5ffdf543a83047a2f54ac28f8caad7f34724cb1ea26b27547fd974f1a2153" %}
+{% set hash_val = "5d8b1c70cc270fad6ff7adf9bea7ae7d805f29711835a4733bd52317a5ce898e" %}
 {% set build = 0 %}
 
 package:
@@ -15,7 +15,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
   noarch: python
 
