@@ -1,8 +1,8 @@
 {% set name = "jsonpatch" %}
-{% set version = "1.24" %}
+{% set version = "1.25" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "cbb72f8bf35260628aea6b508a107245f757d1ec839a19c34349985e2c05645a" %}
+{% set hash_val = "ddc0f7628b8bfdd62e3cbfbc24ca6671b0b6265b50d186c2cf3659dc0f78fd6a" %}
 
 package:
   name: {{ name }}
@@ -16,7 +16,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
