@@ -1,8 +1,7 @@
 {% set name = "jsonpatch" %}
-{% set version = "1.24" %}
+{% set version = "1.28" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "cbb72f8bf35260628aea6b508a107245f757d1ec839a19c34349985e2c05645a" %}
+{% set hash_val = "e930adc932e4d36087dbbf0f22e1ded32185dfb20662f2e3dd848677a5295a14" %}
 
 package:
   name: {{ name }}
@@ -11,15 +10,15 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
 
@@ -36,7 +35,7 @@ about:
   license: BSD 3-Clause
   license_family: BSD
   license_file: COPYING
-  summary: 'Apply JSON-Patches (RFC 6902)'
+  summary: Apply JSON-Patches (RFC 6902)
   dev_url: https://github.com/stefankoegl/python-json-patch
   doc_url: https://python-json-patch.readthedocs.io/en/latest/
 
