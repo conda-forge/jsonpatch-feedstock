@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
 
   run:
-    - python
+    - python >=3.6
     - jsonpointer >=1.9
 
 test:
@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://github.com/stefankoegl/python-json-patch
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: COPYING
   summary: Apply JSON-Patches (RFC 6902)
