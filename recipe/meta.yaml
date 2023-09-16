@@ -1,16 +1,13 @@
 {% set name = "jsonpatch" %}
-{% set version = "1.32" %}
-{% set bundle = "tar.gz" %}
-{% set hash_val = "b6ddfe6c3db30d81a96aaeceb6baf916094ffa23d7dd5fa2c13e13f8b6e600c2" %}
+{% set version = "1.33" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: {{ hash_val }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jsonpatch-{{ version }}.tar.gz
+  sha256: 9fcd4009c41e6d12348b4a0ff2563ba56a2923a7dfee731d004e212e1ee5030c
 
 build:
   number: 0
@@ -19,16 +16,20 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
+    - pypandoc
     - pip
-
   run:
-    - python >=3.6
+    - python >=3.8
     - jsonpointer >=1.9
 
 test:
   imports:
     - jsonpatch
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/stefankoegl/python-json-patch
