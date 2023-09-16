@@ -34,7 +34,7 @@ test:
 about:
   home: https://github.com/stefankoegl/python-json-patch
   license: BSD-3-Clause
-  license_family: BSD-3-Clause
+  license_family: BSD
   license_file: LICENSE
   summary: Apply JSON-Patches (RFC 6902)
   dev_url: https://github.com/stefankoegl/python-json-patch
