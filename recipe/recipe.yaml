@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jsonpatch
-  version: "1.43"
+  version: "1.44"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/jsonpatch-${{ version }}.tar.gz
-  sha256: 0dbd831e9853e4ec9a3897a9cca87716533d2c05f8b5ca0f6cde70d83e5758b6
+  sha256: 88fc1d9728168b4a9be27bb00de469dfb3cd28e8e5b568b24efb2ac583cba7b9
 
 build:
   number: 0
